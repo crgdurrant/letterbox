@@ -30,6 +30,7 @@ Header Styling
 
 .header-container {
   max-height: 100px;
+  width: 100vw;
   background-color: aquamarine;
   display: flex;
   align-items: center;
@@ -174,7 +175,7 @@ Keyboard Styling
   align-items: center;
   flex-direction: column;
   margin-top: 2.5em;
-  max-width: 100vw;
+  width: 100%;
 }
 
 .row {
@@ -183,13 +184,18 @@ Keyboard Styling
 
 .key {
   font-size: 1em;
-  border: 0.1px solid rgb(203, 203, 203);
   margin: 2px;
   padding: 1em 0.75em 1em 0.75em;
   border-radius: 0.3em;
   font-weight: 700;
   background-color: #e2e1e1;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+  .key {
+    font-size: 0.65em;
+  }
 }
 
 .color-key {
@@ -216,7 +222,7 @@ Popup Styling
 .popup-inner {
   position: relative;
   width: 100%;
-  max-width: 540px;
+  max-width: 300px;
 }
 
 .exit-btn-container {
@@ -237,11 +243,12 @@ Popup Styling
 
 .results-header {
   font-family: 'Rowdies', cursive;
-  font-size: 60px;
-  text-align: left;
-  margin-left: 50px;
+  font-size: 3em;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
   margin-top: 0;
-  margin-bottom: 30px
+  margin-bottom: 0.75em
 }
 
 .result-details {
@@ -321,10 +328,11 @@ Help Pop Styling
 
 .help-details {
   font-family: 'Rowdies', cursive;
-  font-size: 20px;
-  text-align: left;
-  max-width: 350px;
-  margin-left: 50px;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 300px;
+  margin-left: 1em;
+  margin-right: 1em;
   margin-top: 1.75em;
 }
 

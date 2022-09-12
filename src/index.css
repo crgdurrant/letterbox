@@ -100,6 +100,7 @@ Score Styling
 
 .time-number {
   color: #FF5981;
+  margin-bottom: 0;
 }
 
 /*************
@@ -146,7 +147,7 @@ Word Box Styling
   border: solid 2px rgba(127, 255, 212, 0.587);
   border-radius: 6px;
   margin: 0 auto;
-  margin-top: 4em;
+  margin-top: 2em;
   padding: 0.2em 0.4em 0.2em 0.4em;
   overflow: scroll;
 }
@@ -172,7 +173,7 @@ Keyboard Styling
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 4.5em;
+  margin-top: 2.5em;
   max-width: 100vw;
 }
 
@@ -181,7 +182,7 @@ Keyboard Styling
 }
 
 .key {
-  font-size: 1.2em;
+  font-size: 1em;
   border: 0.1px solid rgb(203, 203, 203);
   margin: 2px;
   padding: 1em 0.75em 1em 0.75em;

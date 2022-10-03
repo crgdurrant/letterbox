@@ -30,7 +30,7 @@ Header Styling
 
 .header-container {
   max-height: 100px;
-  width: 100vw;
+  width: 100%;
   background-color: aquamarine;
   display: flex;
   align-items: center;
@@ -41,7 +41,6 @@ Header Styling
   display: flex;
   align-items: center;
   margin-left: 1em;
-
 }
 
 .menu-container {
@@ -64,7 +63,7 @@ Header Styling
     visibility: hidden;
   }
   .header-container {
-    max-height: 60px;
+    max-height: 3em;
   }
   .logo {
     height: 30px;
@@ -172,35 +171,56 @@ Keyboard Styling
 
 .keyboard {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  margin-top: 2.5em;
-  width: 100%;
+  margin: 0px 8px 0px 8px;
+  margin-top: 2.5rem;
+  position: absolute;
+  bottom: 0px;
+  width: 95%;
+}
+
+.spacer {
+  display: block;
+  flex: 0.3;
 }
 
 .row {
   display: flex;
+  width: 100%;
+  margin: 0 auto 8px;
 }
 
 .key {
-  font-size: 1em;
-  margin: 2px;
-  padding: 1em 0.75em 1em 0.75em;
-  border-radius: 0.3em;
+  border-radius: 4px;
   font-weight: 700;
   background-color: #e2e1e1;
   cursor: pointer;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 58px;
+  margin: 0 6px 0 0;
 }
 
-@media only screen and (max-width: 400px) {
-  .key {
-    font-size: 0.65em;
-  }
+.key:last-of-type {
+  margin: 0;
+}
+
+.large-key {
+  flex: 1.5;
+  font-size: 12px;
 }
 
 .color-key {
   background-color: #3745C7;
   color: #e2e1e1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
 /*************

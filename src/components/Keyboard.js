@@ -48,18 +48,23 @@ export default function Keyboard(){
 
   return (
     <div className="keyboard" onKeyDown={handleKeyboard}>
-      <div className="row-one row">{row1.map((letter) => {
+      <div className="row-one row">
+        {row1.map((letter) => {
         if(constantLetter === letter){
           return <Key letter={letter} conLetter={true}/>
         } else
         return <Key letter={letter} conLetter={false}/>
       })}</div>
-      <div className="row-one row">{row2.map((letter) => {
+      <div className="row-two row">
+        <div className="spacer"></div>
+        {row2.map((letter) => {
         if(constantLetter === letter){
           return <Key letter={letter} conLetter={true}/>
         } else
         return <Key letter={letter} conLetter={false}/>
-      })}</div>
+      })}
+        <div className="spacer"></div>
+      </div>
       <div className="row-three row">
         <Key letter={"Enter"} />
         {row3.map((letter) => {

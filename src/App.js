@@ -154,8 +154,6 @@ function App() {
         <Keyboard />
         <ResultsPopup gameOver={gameOver} />
         {showHelp ? <HelpPop /> : null}
-        
-
       </AppContext.Provider>
 
     </div>

@@ -133,27 +133,33 @@ function App() {
         headShake, setHeadShake, letterTyped, deleteLetter, enterWord, time, constantLetter, 
         setGameOver, commonWordsMissed, showHelp, setShowHelp}}>
 
-        <div className="score-timer-section">
-          <IconButton disabled={false} onClick={()=>window.location.reload(false)} className="retry"><ReplayIcon /></IconButton>
+        <div className="main-section">
+          <div className="score-timer-section">
+            <IconButton disabled={false} onClick={()=>window.location.reload(false)} className="retry"><ReplayIcon /></IconButton>
+            
+            <div className='high-score'>🏆 {highScore === null? 0: highScore}</div>
+            <div className="current-score-title">SCORE:</div>
+            <div className="current-score-number">{wordsFound.length}</div>
+            <div className="time-title">TIME:</div>
+            <div className="time-number">{time}</div>
+          </div>
+
+          <WordRow />
+
+          <div className="words-found">
+            {wordsFound.map((word) => {
+              return ( <div className='list-word'>
+              {word}</div> )
+            })}
+          </div>
+          <Keyboard />
           
-          <div className='high-score'>🏆 {highScore === null? 0: highScore}</div>
-          <div className="current-score-title">SCORE:</div>
-          <div className="current-score-number">{wordsFound.length}</div>
-          <div className="time-title">TIME:</div>
-          <div className="time-number">{time}</div>
+          <ResultsPopup gameOver={gameOver} />
+          {showHelp ? <HelpPop /> : null}
+
         </div>
 
-        <WordRow />
-
-        <div className="words-found">
-          {wordsFound.map((word) => {
-            return ( <div className='list-word'>
-            {word}</div> )
-          })}
-        </div>
-        <Keyboard />
-        <ResultsPopup gameOver={gameOver} />
-        {showHelp ? <HelpPop /> : null}
+        
       </AppContext.Provider>
 
     </div>

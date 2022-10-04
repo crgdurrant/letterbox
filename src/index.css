@@ -20,6 +20,15 @@ body {
   height: 100vh;
 }
 
+.main-section {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 /*************
 Header Styling 
 **************/
@@ -29,7 +38,7 @@ Header Styling
 }
 
 .header-container {
-  max-height: 100px;
+  max-height: 10vh;
   width: 100%;
   background-color: aquamarine;
   display: flex;
@@ -112,6 +121,7 @@ Game Board Styling
   align-items: center;
   justify-content: center;
   margin-top: 0.2rem;
+
 }
 
 .letterbox {
@@ -142,7 +152,7 @@ Word Box Styling
   display: flex;
   align-items: center;
   height: 30px;
-  max-width: 300px;
+  max-width: 250px;
   border: solid 2px rgba(127, 255, 212, 0.587);
   border-radius: 6px;
   margin: 0 auto;
@@ -172,11 +182,11 @@ Keyboard Styling
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0px 8px 0px 8px;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   position: absolute;
-  bottom: 0px;
-  width: 95%;
+  bottom: 0;
+  width: 96%;
+  margin: 0px 2% 0px 2%;
 }
 
 .spacer {
@@ -194,8 +204,7 @@ Keyboard Styling
   border-radius: 4px;
   font-weight: 700;
   background-color: #e2e1e1;
-  cursor: pointer;
-  display: flex;
+  cursor: pointer;  
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -215,11 +224,6 @@ Keyboard Styling
 .color-key {
   background-color: #3745C7;
   color: #e2e1e1;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
 }
 
 /*************

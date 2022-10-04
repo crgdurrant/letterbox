@@ -152,7 +152,7 @@ Word Box Styling
   display: flex;
   align-items: center;
   height: 30px;
-  max-width: 250px;
+  width: 92%;
   border: solid 2px rgba(127, 255, 212, 0.587);
   border-radius: 6px;
   margin: 0 auto;
@@ -201,6 +201,7 @@ Keyboard Styling
 }
 
 .key {
+  display: flex;
   border-radius: 4px;
   font-weight: 700;
   background-color: #e2e1e1;
